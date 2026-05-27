@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/helllo")
-    public void printMessage(){
+    public String printMessage() {
         System.out.println("***********************************************");
         System.out.println("****************** Hello World  ***************");
         System.out.println("****************** This is the  ***************");
@@ -16,6 +16,6 @@ public class HelloController {
         System.out.println("****************** IT'S WORKING ***************");
         System.out.println("****************** YEAHHHHHHHHH  ***************");
         System.out.println("***********************************************");
-
+        return "Hello world";
     }
 }
